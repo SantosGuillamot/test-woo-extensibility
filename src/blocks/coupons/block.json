@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "test-woo-extensibility/coupons",
+	"version": "0.1.0",
+	"title": "Test Woo Extensibility - Coupons",
+	"category": "text",
+	"icon": "heart",
+	"description": "",
+	"textdomain": "test-woo-extensibility",
+	"supports": {
+		"interactivity": true
+	},
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./style.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScriptModule": "file:./view.js",
+	"blockHooks": {
+		"woocommerce/add-to-cart-with-options": "firstChild"
+	}
+}
