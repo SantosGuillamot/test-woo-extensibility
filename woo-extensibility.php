@@ -13,6 +13,7 @@
  */
 
 require_once __DIR__ . '/src/hide-button/index.php';
+require_once __DIR__ . '/src/remove-zoom/index.php';
 require_once __DIR__ . '/src/search-filter/index.php';
 
 /**
