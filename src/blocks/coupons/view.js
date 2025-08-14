@@ -1,1 +1,1 @@
-console.log( 'Coupons block loaded' );
+import { store } from '@wordpress/interactivity';

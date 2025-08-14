@@ -12,6 +12,7 @@
  * Requires Plugins:  woocommerce
  */
 
+require_once __DIR__ . '/src/hide-button/index.php';
 require_once __DIR__ . '/src/search-filter/index.php';
 
 /**
