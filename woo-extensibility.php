@@ -12,11 +12,12 @@
  * Requires Plugins:  woocommerce
  */
 
-add_action( 'init', 'auto_register_block_types' );
+require_once __DIR__ . '/src/search-filter/index.php';
 
 /**
  * Auto register all blocks found in the `build/blocks` folder.
  */
+add_action( 'init', 'auto_register_block_types' );
 function auto_register_block_types() {
 	if ( file_exists( __DIR__ . '/build/blocks/' ) ) {
 		$block_json_files     = glob( __DIR__ . '/build/blocks/*/block.json' );
